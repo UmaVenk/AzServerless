@@ -17,7 +17,7 @@ module.exports = async function (context, req, toDoItem) {
     
     context.res = {
         // status: 200, /* Defaults to 200 */
-        body: JSON.stringify(toDoItem)
+        body: "hi" + JSON.stringify(toDoItem)
     };
    
 }
