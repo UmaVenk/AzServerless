@@ -1,6 +1,6 @@
 module.exports = async function (context, req, toDoItem) {
     context.log('JavaScript HTTP trigger function processed a request.');
-
+    //Comment to check workflow
     //const name = (req.query.name || (req.body && req.body.name));
 
     //userId = req.body.ratingId

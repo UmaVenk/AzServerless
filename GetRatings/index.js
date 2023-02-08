@@ -1,6 +1,6 @@
 module.exports = async function (context, req, input) {
     context.log('JavaScript HTTP trigger function processed a request.');
-
+    //Comment to check workflow
     //userId = req.body.userId;
     //console.log('111', userId)
     var documents = context.bindings.userRatings;
