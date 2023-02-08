@@ -1,0 +1,28 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "userRatings",
+      "type": "cosmosDB",
+      "direction": "in",
+      "databaseName": "UmaCosmosDB1",
+      "collectionName": "UmaCosmosDBContainer1",
+      "connectionStringSetting": "MyAccount_COSMOSDB",
+      "sqlQuery": "SELECT * from c where c.userId = {userId}"
+  }    
+  ]
+}

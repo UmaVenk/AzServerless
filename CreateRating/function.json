@@ -1,0 +1,28 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "ratingsDocument",
+      "type": "cosmosDB",
+      "databaseName": "UmaCosmosDB1",
+      "collectionName": "UmaCosmosDBContainer1",
+      "createIfNotExists": true,
+      "connectionStringSetting": "MyAccount_COSMOSDB",
+      "direction": "out"
+  }    
+  ]
+}
